@@ -1,57 +1,68 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Проект 1</title>
+    <title>Проект 1</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="  margin: auto;
-width: 50%;
-border: 3px solid rgb(0, 110, 255);
-padding: 10px;
-">
 
-<h1>Гражданска отговорност</h1>
-<form action="/action_page.php">
+<body id="someselector">
+    <div class="container">
+        <h1 class="title">Гражданска отговорност</h1>
+        <form action="/action_page.php">
+            <div class="section">
+                <label for="cars" class="label">Тип МПС:</label>
+                <select name="Тип МПС" id="cars" class="input-field">
+                    <option value="typevehicle">Лек автомовил</option>
+                    <option value="typevehicle">Мотоциклет</option>
+                </select>
+            </div>
+    
+            <div class="section">
+                <label for="age" class="label">Възраст:</label>
+                <input type="number" id="age" name="age" class="input-field age">
+            </div>
+    
+            <div class="section">
+                <label for="cities" class="label">Населено място:</label>
+                <select name="Градове" id="cities" class="input-field">
+                    <!-- <option value="Sofia">София</option>
+                    <option value="Burgas">Бургас</option>
+                    <option value="Kustendil">Кюстендил</option>
+                    <option value="VelTurnovo">Велико Търново</option>
+                    <option value="Varna">Варна</option>
+                    <option value="Plovdiv">Пловдив</option>
+                    <option value="Ruse">Русе</option>
+                    <option value="Blagoevgrad">Благоевград</option>
+                    <option value="StaraZagora">Стара Загора</option>
+                    <option value="othercities">други</option> -->
+                </select>
+            </div>
+    
+            <div class="section">
+                <label for="volume" class="label">Обем двигател:</label>
+                <select name="Тип МПС" id="volumeengine" class="input-field">
+                    <option value="upto1500">до 1500 к.м.</option>
+                    <option value="between1520">1500-2000к.м.</option>
+                    <option value="over2000">над 2000к.м.</option>
+                </select>
+            </div>
+    
+            <div class="section">
+                <label for="use" class="label">Предназначение:</label>
+                <select name="Тип МПС" id="usage" class="input-field">
+                    <option value="personal">Лични нужди</option>
+                    <option value="taxi">Такси/учебен</option>
+                    <option value="sales">Производствена и търговска дейност</option>
+                </select>
+            </div>
+    
+            <input type="submit" value="Пресметни" class="button-submit">
+        </form>
+    </div>
 
-    <label for="cars">Тип МПС:</label>
-<select name="Тип МПС" id="cars">
-  <option value="typevehicle">Лек автомовил</option>
-  <option value="typevehicle">Мотоциклет</option>
-</select>
-
-  <label for="age">Възраст:</label>
-  <input type="number" id="age" name="age"><br><br>
-
-<label for="cities">Населено място:</label>
-<select name="Градове" id="cities">
-  <option value="Sofia">София</option>
-  <option value="Burgas">Бургас</option>
-  <option value="Kustendil">Кюстендил</option>
-  <option value="VelTurnovo">Велико Търново</option>
-  <option value="Varna">Варна</option>
-  <option value="Plovdiv">Пловдив</option>
-  <option value="Ruse">Русе</option>
-  <option value="Blagoevgrad">Благоевград</option>
-  <option value="StaraZagora">Стара Загора</option>
-  <option value="othercities">други</option>
-</select>
-
-<label for="volume">Обем двигател:</label>
-<select name="Тип МПС" id="volumeengine">
-  <option value="upto1500">до 1500 к.м.</option>
-  <option value="between1520">1500-2000к.м.</option>
-  <option value="over2000">над 2000к.м.</option>
-</select>
-
-<label for="use">Предназначение:</label>
-<select name="Тип МПС" id="usage">
-  <option value="personal">Лични нужди</option>
-  <option value="taxi">Такси/учебен</option>
-  <option value="sales">Производствена и търговска дейност</option>
-</select>
-
-<input type="submit" value="Submit">
-
-</form>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
