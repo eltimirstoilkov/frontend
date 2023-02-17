@@ -9,6 +9,11 @@
     margin-bottom: 10px;
 }
 
+.ui-dialog-titlebar.ui-widget-header { background-color: red; background-image: none; }
+
+.dialog-container { width: 100%; border-radius: 5px; }
+.dialog-container .dialog-paragraph { padding: 20px; border: 1px solid #fff; border-radius: 5px; }
+
 .input-field {
     width: 120px;
     border-radius: 5px;
@@ -16,15 +21,19 @@
     display: inline-block;
 }
 
-.input-field.age{
-    width: 111px !important;
-}
-
 .label {
     width: 120px;
     display: inline-block;
     font-weight: 600;
 
+}
+
+.section.age {
+    display: none;
+}
+
+.section.age.active {
+    display: block;
 }
 
 .button-submit {
@@ -48,3 +57,10 @@
     margin-top: -22px;
     min-height: 100vh;
   }
+.section.hide {
+    display: none;
+}
+
+.section.show {
+    display: block;
+}
